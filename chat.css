@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Chat box styling */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    height: calc(100vh - 70px); /* Full screen except input area */
+}
+
+/* Input box container */
+.input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field */
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 0px;
+    gap: 2px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#sendBtn {
+    background-color: #007bff;
+    color: white;
+    margin-right: 5px;
+}
+
+#nextBtn {
+    background-color: #ff4d4d;
+    color: white;
+}
+#notification {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #85295f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-out;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+
+/* Notification Styling */
+#notification {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #85295f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-out;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+
+/* Show Notification */
+.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* Hidden by Default */
+.hidden {
+    display: none;
+}
+
+
+
+
+
+/* Notification Styling for success */
+#success {
+    position: fixed;
+    top: 20px;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Show Notification */
+.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* Hidden by Default */
+.hidden {
+    display: none;
+}
+
+
+

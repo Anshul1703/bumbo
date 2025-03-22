@@ -1,0 +1,54 @@
+/* Full-page centering */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* Horizontal centering */
+    align-items: center;  /* Vertical centering */
+    margin: 0;
+    background: #111;  /* Dark background */
+}
+
+/* Link styling */
+.talk {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.talk:hover {
+    background: #bd0eae;
+    color: white;
+}
+
+
+
+/* Notification Styling */
+#notification {
+    position: fixed;
+    top: 20px;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Show Notification */
+.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* Hidden by Default */
+.hidden {
+    display: none;
+}
